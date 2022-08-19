@@ -8,8 +8,6 @@ const gallery = document.querySelector('.gallery');
 const items = [];
 
 galleryItems.forEach(element => {
-    // const galleryItem = document.createElement('li');
-    // galleryItem.className = 'gallery__item';
 
     const galleryLink = document.createElement('a');
     galleryLink.className = 'gallery__link';
@@ -20,8 +18,6 @@ galleryItems.forEach(element => {
     galleryImage.src = element.preview;
     galleryImage.alt = element.description;
     galleryImage.setAttribute('title', element.description);
-
-    // galleryItem.append(galleryLink);
 
     galleryLink.append(galleryImage);
 
