@@ -10,7 +10,10 @@ const LOCALSTORAGE_KEY = 'feedback-form-state';
 ref.form.addEventListener('submit', onSubmitForm);
 ref.form.addEventListener('input', throttle(onFormData, 500));
 
-const formData = { email: '', message : ''};
+const formData = {
+    email: '',
+    message: '',
+};
 
 function onFormData(e) {
     formData[e.target.name] = e.target.value;
